@@ -1,4 +1,4 @@
-// azkar_model.dart
+
 class azkar {
   final String zikr;
   final int repeat;
