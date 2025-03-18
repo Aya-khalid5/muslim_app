@@ -105,7 +105,7 @@ class _lessons_screen_state extends State<lessons_screen> {
               'لم يتم العثور على نتائج لـ "$_search_query"',
               style: const TextStyle(
                 fontSize: 16,
-                color: Colors.black, // لون الخط أسود
+                color: Colors.black, 
               ),
               textAlign: TextAlign.center,
             ),
@@ -142,7 +142,7 @@ class _lessons_screen_state extends State<lessons_screen> {
                   textDirection: TextDirection.rtl,
                   child: Text(
                     lesson.description,
-                    style: const TextStyle(color: Colors.black), // لون الخط أسود
+                    style: const TextStyle(color: Colors.black), 
                   ),
                 ),
                 const SizedBox(height: 8),
@@ -158,7 +158,7 @@ class _lessons_screen_state extends State<lessons_screen> {
                     Text(
                       lesson_data.categories.firstWhere(
                               (cat) => cat['id'] == lesson.category)['name']!,
-                      style: const TextStyle(color: Colors.black), // لون الخط أسود
+                      style: const TextStyle(color: Colors.black), 
                     ),
                   ],
                 ),
@@ -169,7 +169,7 @@ class _lessons_screen_state extends State<lessons_screen> {
                     return Chip(
                       label: Text(tag),
                       backgroundColor: const Color(0xFFCAF3E8),
-                      labelStyle: const TextStyle(color: Colors.black), // لون الخط أسود
+                      labelStyle: const TextStyle(color: Colors.black), 
                     );
                   }).toList(),
                 ),
@@ -315,7 +315,7 @@ class sub_category_lessons_screen extends StatelessWidget {
                     textDirection: TextDirection.rtl,
                     child: Text(
                       lesson.description,
-                      style: const TextStyle(color: Colors.black), // لون الخط أسود
+                      style: const TextStyle(color: Colors.black), 
                     ),
                   ),
                   const SizedBox(height: 8),
@@ -325,7 +325,7 @@ class sub_category_lessons_screen extends StatelessWidget {
                       return Chip(
                         label: Text(tag),
                         backgroundColor: const Color(0xFF014535),
-                        labelStyle: const TextStyle(color: Colors.black), // لون الخط أسود
+                        labelStyle: const TextStyle(color: Colors.black), 
                       );
                     }).toList(),
                   ),
@@ -369,7 +369,7 @@ class lesson_detail_screen extends StatelessWidget {
               textDirection: TextDirection.rtl,
               child: Text(
                 lessona.description,
-                style: const TextStyle(fontSize: 16, color: Colors.black), // لون الخط أسود
+                style: const TextStyle(fontSize: 16, color: Colors.black), 
               ),
             ),
             const SizedBox(height: 16),
@@ -377,7 +377,7 @@ class lesson_detail_screen extends StatelessWidget {
               textDirection: TextDirection.rtl,
               child: Text(
                 lessona.content,
-                style: const TextStyle(fontSize: 14, color: Colors.black), // لون الخط أسود
+                style: const TextStyle(fontSize: 14, color: Colors.black), 
               ),
             ),
           ],
