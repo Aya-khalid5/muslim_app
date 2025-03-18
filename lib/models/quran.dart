@@ -4,7 +4,7 @@ class surah {
   final String englishName;
   final String revelationType;
   final int numberOfAyahs;
-  final String imageUrl; // إضافة حقل جديد لتخزين رابط الصورة
+  final String imageUrl; 
 
   surah({
     required this.number,
@@ -12,7 +12,7 @@ class surah {
     required this.englishName,
     required this.revelationType,
     required this.numberOfAyahs,
-    required this.imageUrl, // إضافة الحقل الجديد
+    required this.imageUrl,
   });
 
   factory surah.fromJson(Map<String, dynamic> json) {
@@ -22,7 +22,7 @@ class surah {
       englishName: json['englishName'],
       revelationType: json['revelationType'],
       numberOfAyahs: json['numberOfAyahs'],
-      imageUrl: json['imageUrl'], // تعيين رابط الصورة من الـ JSON
+      imageUrl: json['imageUrl'], 
     );
   }
 }
