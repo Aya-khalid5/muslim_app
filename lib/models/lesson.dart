@@ -6,7 +6,7 @@ import 'data_hadith.dart';
 import 'lesson.dart';
 
 class lesson_data {
-  // فئات رئيسية
+  
   static const List<Map<String, String>> categories = [
     {
       'id': 'hadith',
@@ -48,7 +48,6 @@ class lesson_data {
     },
   ];
 
-  // فئات فرعية
   static const List<Map<String, String>> sub_categories = [
     {
       'id': 'aqeedah',
@@ -97,9 +96,7 @@ class lesson_data {
     },
   ];
 
-  // دروس (أحاديث أو تعليمات)
   static List<lesson> lessons = [
-    // أحاديث العقيدة
     lesson(
       title: 'حديث الإيمان',
       description: 'الحديث الذي يتحدث عن أركان الإيمان.',
@@ -110,7 +107,6 @@ class lesson_data {
       subCategory: 'aqeedah',
       tags: ['إيمان', 'عقيدة'], id: '1', subCategories: 'hadeth',
     ),
-    // أحاديث العبادات
     lesson(id:'1',
       title: 'حديث الصلاة',
       description: 'الحديث الذي يوضح فضل الصلاة.',
@@ -120,7 +116,6 @@ class lesson_data {
       subCategory: 'ibadat',
       tags: ['صلاة', 'عبادة'], subCategories: 'hadeth',
     ),
-    // كيفية الصلاة
     lesson(
       title: 'تعليمات الصلاة',
       description: 'خطوات أداء الصلاة بشكل صحيح.',
@@ -142,7 +137,6 @@ class lesson_data {
       subCategory: 'how_to_pray',
       tags: ['صلاة', 'تعليمات'], id: '2', subCategories: 'hadeth',
     ),
-    // كيفية الوضوء
     lesson(
       title: 'تعليمات الوضوء',
       description: 'خطوات الوضوء بشكل صحيح.',
@@ -161,7 +155,6 @@ class lesson_data {
       subCategory: 'how_to_wudu',
       tags: ['وضوء', 'تعليمات'], id: '3', subCategories: 'hadeth',
     ),
-    // أركان الإسلام
     lesson(
       title: 'حديث أركان الإسلام',
       description: 'الحديث الذي يتحدث عن أركان الإسلام.',
@@ -170,7 +163,6 @@ class lesson_data {
       category: 'arkan_islam',
       tags: ['إسلام', 'أركان'], id: '4', subCategory: 'kk', subCategories: 'hadeth',
     ),
-    // السيرة النبوية
     lesson(
       title: 'حديث الهجرة',
       description: 'الحديث الذي يتحدث عن هجرة النبي صلى الله عليه وسلم.',
@@ -181,7 +173,6 @@ class lesson_data {
       subCategory: 'sira_nabawiya',
       tags: ['سيرة', 'هجرة'], id: '5', subCategories: 'hadeth',
     ),
-    // الآداب والأخلاق
     lesson(
       title: 'حديث الحياء',
       description: 'الحديث الذي يتحدث عن الحياء.',
