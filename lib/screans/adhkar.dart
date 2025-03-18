@@ -1,4 +1,3 @@
-// azkar_screen.dart
 import 'package:flutter/material.dart';
 import '../widget/zikr_card.dart';
 
