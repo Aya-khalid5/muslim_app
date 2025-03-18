@@ -18,7 +18,7 @@ class lesson_detail_screen extends StatelessWidget {
         padding: const EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisSize: MainAxisSize.min, // جعل Column يأخذ أقل مساحة ممكنة
+          mainAxisSize: MainAxisSize.min, 
           children: [
             Directionality(
               textDirection: TextDirection.rtl,
@@ -64,7 +64,7 @@ class lessons_detail_screen extends StatelessWidget {
               textDirection: TextDirection.rtl,
               child: Text(
                 lessona.description,
-                style: const TextStyle(fontSize: 16, color: Colors.black), // لون الخط أسود
+                style: const TextStyle(fontSize: 16, color: Colors.black), 
               ),
             ),
             const SizedBox(height: 16),
@@ -72,7 +72,7 @@ class lessons_detail_screen extends StatelessWidget {
               textDirection: TextDirection.rtl,
               child: Text(
                 lessona.content,
-                style: const TextStyle(fontSize: 14, color: Colors.black), // لون الخط أسود
+                style: const TextStyle(fontSize: 14, color: Colors.black), 
               ),
             ),
           ],
