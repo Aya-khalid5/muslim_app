@@ -1,4 +1,3 @@
-// lessons_screen.dart
 import 'package:flutter/material.dart';
 
 import '../models/lesson.dart';
