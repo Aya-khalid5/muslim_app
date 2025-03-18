@@ -1,6 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:just_audio/just_audio.dart'; // استيراد مكتبة just_audio
+import 'package:just_audio/just_audio.dart';
 import '../servers/api_service.dart';
 import '../widget/search_bar.dart';
 
@@ -13,7 +13,7 @@ class quran_screen extends StatefulWidget {
 
 class _QuranScreenState extends State<quran_screen> {
   final api_service _quranService = api_service();
-  final AudioPlayer _audioPlayer = AudioPlayer(); // استخدام AudioPlayer من just_audio
+  final AudioPlayer _audioPlayer = AudioPlayer(); 
   final TextEditingController _searchController = TextEditingController();
   List<dynamic> _surahs = [];
   List<dynamic> _filteredSurahs = [];
@@ -30,7 +30,7 @@ class _QuranScreenState extends State<quran_screen> {
 
   @override
   void dispose() {
-    _audioPlayer.dispose(); // التخلص من مشغل الصوت عند التخلص من الشاشة
+    _audioPlayer.dispose(); 
     _searchController.dispose();
     super.dispose();
   }
@@ -93,9 +93,9 @@ class _QuranScreenState extends State<quran_screen> {
       _selectedAyahIndex = index;
     });
     try {
-      await _audioPlayer.stop(); // إيقاف الصوت الحالي
-      await _audioPlayer.setUrl(url); // تعيين مصدر الصوت
-      await _audioPlayer.play(); // تشغيل الصوت
+      await _audioPlayer.stop(); 
+      await _audioPlayer.setUrl(url); 
+      await _audioPlayer.play();
     } catch (e) {
       print('Error playing audio: $e');
     }
