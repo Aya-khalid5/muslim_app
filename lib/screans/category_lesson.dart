@@ -128,7 +128,7 @@ class _lessons_screen_state extends State<lessons_screen> {
               child: Text(
                 lesson.title,
                 style: const TextStyle(
-                  color: Colors.black, // لون الخط أسود
+                  color: Colors.black, 
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
                 ),
@@ -221,7 +221,7 @@ class _lessons_screen_state extends State<lessons_screen> {
                 style: const TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
-                  color: Colors.black, // لون الخط أسود
+                  color: Colors.black,
                 ),
                 textAlign: TextAlign.center,
               ),
@@ -230,7 +230,7 @@ class _lessons_screen_state extends State<lessons_screen> {
                 category['description']!,
                 style: const TextStyle(
                   fontSize: 12,
-                  color: Colors.black, // لون الخط أسود
+                  color: Colors.black, 
                 ),
                 textAlign: TextAlign.center,
                 maxLines: 2,
@@ -303,7 +303,7 @@ class sub_category_lessons_screen extends StatelessWidget {
                   style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
-                    color: Colors.black, // لون الخط أسود
+                    color: Colors.black, 
                   ),
                 ),
               ),
