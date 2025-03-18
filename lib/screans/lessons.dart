@@ -106,7 +106,7 @@ class _lessons_screen_state extends State<lessons_screen> {
               'لم يتم العثور على نتائج لـ "$_search_query"',
               style: const TextStyle(
                 fontSize: 16,
-                color: Colors.black, // لون الخط أسود
+                color: Colors.black, 
               ),
               textAlign: TextAlign.center,
             ),
@@ -129,7 +129,7 @@ class _lessons_screen_state extends State<lessons_screen> {
               child: Text(
                 lesson.title,
                 style: const TextStyle(
-                  color: Colors.black, // لون الخط أسود
+                  color: Colors.black, 
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
                 ),
@@ -143,7 +143,7 @@ class _lessons_screen_state extends State<lessons_screen> {
                   textDirection: TextDirection.rtl,
                   child: Text(
                     lesson.description,
-                    style: const TextStyle(color: Colors.black), // لون الخط أسود
+                    style: const TextStyle(color: Colors.black),
                   ),
                 ),
                 const SizedBox(height: 8),
@@ -159,7 +159,7 @@ class _lessons_screen_state extends State<lessons_screen> {
                     Text(
                       lesson_data.categories.firstWhere(
                               (cat) => cat['id'] == lesson.category)['name']!,
-                      style: const TextStyle(color: Colors.black), // لون الخط أسود
+                      style: const TextStyle(color: Colors.black), 
                     ),
                   ],
                 ),
@@ -170,7 +170,7 @@ class _lessons_screen_state extends State<lessons_screen> {
                     return Chip(
                       label: Text(tag),
                       backgroundColor: const Color(0xFFCAF3E8),
-                      labelStyle: const TextStyle(color: Colors.black), // لون الخط أسود
+                      labelStyle: const TextStyle(color: Colors.black), 
                     );
                   }).toList(),
                 ),
@@ -222,7 +222,7 @@ class _lessons_screen_state extends State<lessons_screen> {
                 style: const TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
-                  color: Colors.black, // لون الخط أسود
+                  color: Colors.black, 
                 ),
                 textAlign: TextAlign.center,
               ),
@@ -231,7 +231,7 @@ class _lessons_screen_state extends State<lessons_screen> {
                 category['description']!,
                 style: const TextStyle(
                   fontSize: 12,
-                  color: Colors.black, // لون الخط أسود
+                  color: Colors.black, 
                 ),
                 textAlign: TextAlign.center,
                 maxLines: 2,
