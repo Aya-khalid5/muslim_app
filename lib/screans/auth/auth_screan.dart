@@ -1,4 +1,3 @@
-// sign_up_screen.dart
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../../widget/custom_input.dart';
@@ -14,22 +13,19 @@ class _sign_up_screen_state extends State<sign_up_screen> {
 
   void _sign_up() async {
     if (email_controller.text.isNotEmpty && password_controller.text.isNotEmpty) {
-      // إنشاء كائن من الـ Model (user) باستخدام البيانات المدخلة
+     
       user new_user = user(
         email: email_controller.text,
         password: password_controller.text,
       );
 
-      // حفظ البريد الإلكتروني في SharedPreferences
       final prefs = await SharedPreferences.getInstance();
       await prefs.setString('user_email', new_user.email);
 
-      // إظهار رسالة نجاح
       ScaffoldMessenger.of(context)
           .showSnackBar(SnackBar(content: Text("تم إنشاء الحساب بنجاح")));
       Navigator.pop(context);
     } else {
-      // إظهار رسالة خطأ في حالة عدم إدخال جميع البيانات
       ScaffoldMessenger.of(context)
           .showSnackBar(SnackBar(content: Text("الرجاء إدخال جميع البيانات")));
     }
