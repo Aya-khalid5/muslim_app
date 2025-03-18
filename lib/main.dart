@@ -11,7 +11,7 @@ import 'package:muslim_app/screans/tasbih_screan.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // التحقق من حالة تسجيل الدخول
+  
   SharedPreferences prefs = await SharedPreferences.getInstance();
   bool isLoggedIn = prefs.getBool('isLoggedIn') ?? false;
 
