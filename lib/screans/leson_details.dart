@@ -1,4 +1,3 @@
-// lesson_detail_screen.dart
 import 'package:flutter/material.dart';
 import '../models/data_hadith.dart';
 
