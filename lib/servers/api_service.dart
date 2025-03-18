@@ -27,7 +27,7 @@ class api_service {
         final Map<String, dynamic> surahData = Map<String, dynamic>.from(
             response.data);
 
-        // تحديث روابط الصوت لكل آية
+        
         if (surahData['data'] != null && surahData['data']['ayahs'] != null) {
           final List<dynamic> ayahs = surahData['data']['ayahs'];
           for (var ayah in ayahs) {
